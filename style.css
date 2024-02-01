@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav{
+    padding: 20px 100px;
+    background: #fff;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav__link__phone{
+    display: none;
+    cursor: pointer;
+}
+
+.nav__logo img{
+    width: 70%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav__link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__link button, .menu__phone button{
+    background: black;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+section{
+    padding: 80px 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box__title{
+    background: rgb(231, 231, 231);
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.container__skill{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card__skill{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.card__skill .logo__skill{
+    height: 70px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.card__skill .logo__skill img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__skill p{
+    font-size: 14px;
+}
+
+.section__2{
+    background:rgb(244, 243, 243);
+}
+
+.card__experience{
+    display: flex;
+    background: white;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px rgb(204, 204, 204);
+}
+
+.card__experience .card__image{
+    width: 40%;
+}
+
+.card__experience .card__image img{
+    width: 20%;
+}
+
+.card__experience .card__content{
+    width: 30%;
+}
+
+.card__experience .card__content h5{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.card__experience .card__date {
+    width: 20%;
+    text-align: end;
+}
+
+.menu__phone{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav{
+        padding: 15px;
+    }
+
+    nav .nav__link__phone{
+        display: block;
+    }
+
+    .nav__link{
+        display: none;
+    }
+
+    section{
+        padding: 20px;
+    }
+}
