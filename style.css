@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     background: #fff;
     font-family:'Times New Roman', Times, serif;
+    
 }
 
 nav{
@@ -150,4 +152,6 @@ section{
     section{
         padding: 20px;
     }
+
+
 }
